@@ -1,0 +1,9 @@
+command /sethome:
+ trigger:
+ set {home.%uuid of player%} to location of block location of player
+ send "Set home to: %{home.%uuid of player%}%" to player
+ 
+ command /home:
+  trigger:
+  Teleport player to {home.%uuid of player%}
+  send "teleporting to home!" to player 
